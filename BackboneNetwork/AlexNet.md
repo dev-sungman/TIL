@@ -4,7 +4,7 @@ Alex Krizhevsky, Geoffrey E. Hinton
 
 ## Architecture
 
-![Img](Desktop/Blog/photo/alexnet/1.png "AlexNet Architecture")
-![Img](Desktop/Blog/photo/alexnet/2.png )
-![Img](Desktop/Blog/photo/alexnet/3.png )
-![Img](Desktop/Blog/photo/alexnet/4.png )
+![Img](Desktop/Blog/til/BackboneNetwork/architecture.png "AlexNet Architecture")
+![Img](Desktop/Blog/til/BackboneNetwork/test_result.png )
+![Img](Desktop/Blog/til/BackboneNetwork/test_result2.png )
+![Img](Desktop/Blog/til/BackboneNetwork/dropout.png )
