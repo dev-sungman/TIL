@@ -25,7 +25,7 @@ AlexNet에서 시사하는 포인트를 크게 3가지로 나누어보면
 	* 아직까지도 많은 네트워크에서 사용하는 기법이다. Drop Out을 사용하여 Network Training시에 Overfitting을 방지한다. 당연하게도, Test 과정 (Inference)에서는 사용하지 않는다.
 
 ![Dropout](../images/alexnet/dropout.png)
-
+<img src="../images/alexnet/dropout.jpg" alt="Dropout" width="100%" height="100%">
 ## Architecture
 
 AlexNet의 Architecture는 다음과 같다. 
