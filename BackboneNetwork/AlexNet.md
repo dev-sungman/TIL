@@ -24,12 +24,12 @@ AlexNet에서 시사하는 포인트를 크게 3가지로 나누어보면
 3. Drop Out
 	* 아직까지도 많은 네트워크에서 사용하는 기법이다. Drop Out을 사용하여 Network Training시에 Overfitting을 방지한다. 당연하게도, Test 과정 (Inference)에서는 사용하지 않는다.
 
-![Dropout](../images/alexnet/dropout.png)
+![Dropout](./images/alexnet/dropout.png)
 
 ## Architecture
 
 AlexNet의 Architecture는 다음과 같다. 
-![Arhchitecture](../images/alexnet/architecture.png)
+![Arhchitecture](./images/alexnet/architecture.png)
 
 AlexNet은 Network가 2갈래로 나뉘어 구성되어 있는 것을 확인할 수 있는데, 이 당시 GPU가 GTX580 이여서 메모리의 문제를 해결하기 위하여 이런 구조를 취했다고 한다. 
 
@@ -37,7 +37,7 @@ AlexNet은 Network가 2갈래로 나뉘어 구성되어 있는 것을 확인할 
 
 
 ILSVRC 2010 Datasets에서의 실험 결과이다. 그동안 절대적으로 여겨졌던 SVM을 이겼다는 점에서 시사하는 바가 있다.
-![testResults](../images/alexnet/test_result.png)
+![testResults](./images/alexnet/test_result.png)
 
 ILSVRC 2012 Datasets에서의 실험 결과.
-![testResults2](../images/alexnet/test_result2.png)
+![testResults2](./images/alexnet/test_result2.png)
