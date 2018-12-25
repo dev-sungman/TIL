@@ -41,14 +41,14 @@ VGG Network에서 자주 사용되는 구조는 VGG-16, VGG-19이다.
 실험에서 사용한 5가지의 구조이다.C의 구조를 보면 1x1 convolution filter를 사용한 것을 볼 수 있다. 1x1 convolution filter를 사용하여 receptive field에 영향을 미치지 않으면서, non-linearity를 증가 시켰다는 점에서 의의를 가진다. 
 
 이 network 이후에는 이 1x1 filter 사용하여 다른 기능을 수행하지만, 여기서는 다루지 않기로 한다. 
-<img src="../images/vgg/experiment.png" width="50%" height="50%">
+<img src="../images/vgg/experiment.png" width="100%" height="50%">
 
 
 A, A_LRN을 비교해보면 LRN의 효과가 미미하다는 것을 알 수 있다. 
 
-<img src="../images/vgg/experiment1.png" width="50%" height="50%">
+<img src="../images/vgg/experiment1.png" width="100%" height="50%">
 
 train set, test set 의 사이즈를 다양하게 하여 테스트 한 결과이다. 
-<img src="../images/vgg/experiment2.png" width="50%" height="50%">
+<img src="../images/vgg/experiment2.png" width="100%" height="50%">
 
 
