@@ -25,10 +25,10 @@ ILSVRC 14의 Classification, Detection 에서 1등을 차지한 GoogLeNet에 관
 	* 이전 네트워크들에서 사용하던 Fully-Connectied Layer(FC Layer)의 단점을 언급한다. 사실상 대부분의 CNN 네트워크에서 제일 많은 Parameter를 차지하는 부분이 바로 FC Layer이다. 
 	* GoogleNet에서는 이런 문제점을 해결하기 위하여 기존 CNN 네트워크와 다르게 NIN 구조를 사용하였고, FC Layer 대신에 Global Average Pooling(GAP)을 활용하였다. 
 
-<img src="../images/google/nin.png" width="50%" height="50%">
+<img src="../images/google/nin.png" width="100%" height="50%">
 
 
-<img src="../images/google/nin2.png" width="50%" height="50%">
+<img src="../images/google/nin2.png" width="100%" height="50%">
 
 ## Architecture
 
