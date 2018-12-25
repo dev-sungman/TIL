@@ -50,6 +50,6 @@ Auxillary Soft-max 의 구조에서 알 수 있듯이, 구글에서는 GoogLeNet
 
 표에서의 7 model은 앙상블 모델을 나타낸다. 
 
-<img src="../images/google/experiment.png" width="100%" height="50%">
+<img src="../images/google/experiment.png" width="50%" height="50%">
 
 
