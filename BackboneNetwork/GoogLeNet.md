@@ -28,7 +28,7 @@ ILSVRC 14의 Classification, Detection 에서 1등을 차지한 GoogLeNet에 관
 <img src="../images/google/nin.png" width="100%" height="50%">
 
 
-<img src="../images/google/nin2.png" width="100%" height="50%">
+<img src="../images/google/nin3.png" width="100%" height="50%">
 
 ## Architecture
 
