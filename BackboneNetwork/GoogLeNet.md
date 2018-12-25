@@ -19,7 +19,7 @@ ILSVRC 14의 Classification, Detection 에서 1등을 차지한 GoogLeNet에 관
 
 [그림 1-2. Inception Module with Dimension Reduction]
 
-<img src="../images/google/inception_reduction.png" width="5000" height="500">
+<img src="../images/google/inception_reduction.png" width="500" height="500">
 
 2. Network In Network(NIN)
 	* 이전 네트워크들에서 사용하던 Fully-Connectied Layer(FC Layer)의 단점을 언급한다. 사실상 대부분의 CNN 네트워크에서 제일 많은 Parameter를 차지하는 부분이 바로 FC Layer이다. 
