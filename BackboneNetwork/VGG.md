@@ -19,10 +19,7 @@ VGG Network 에서 중요한 한 가지를 꼽으라 하면 바로 Filter의 사
 	* 개인적으로 아이디어에 감동을 받아, Kernel Magic으로 이름 지었다.
 	* 같은 receptive field를 가지면서 parameter를 줄이기 위한 방법이다. 아래 그림은 5x5 convolution filter와 3x3 convolution filter 2개를 serial하게 놓은 것이 같은 receptive field를 가진다는 것을 보여준다. 
 	* 어떻게 보면 VGG Network에서는 이 Kernel Magic 외에는 시사하는 점이 크지 않은 것 같다. 
-![KernelMagic](../images/vgg/kernelmagic.png)
-<img src="/images/vgg/kernelmagic.png" width="300" height="300">
-<img src="../images/vgg/kernelmagic.png" width="300" height="300">
-<img src="/home/sungmancho/Projects/TIL/images/vgg/kernelmagic.png" width="300" height="300">
+<img src="../images/vgg/kernelmagic.png" width="100%" height="50%">
 
 	* 3x3 convolution filter 2개로 5x5 convolution filter를 만들 수 있고, 3x3 convolution filter 3개로 7x7 convolution filter를 만들 수 있다. 
 	* 아래 그림은  parameter의 수를 비교하는 그림이다. 
