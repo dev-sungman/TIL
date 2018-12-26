@@ -25,7 +25,11 @@ ResNet의 기여를 크게 두 가지로 나누어보려고 한다. 첫 번째�
 	* input X 를 그대로 element-wise add 하는 구조를 볼 수 있는데, 이를 통해 input의 정보를 손실하는 것을 막을 수 있다고 한다. 또한, element-wise add 연산 이기 때문에 training parameter가 증가하지 않는다는 장점도 있다. 
 	* 아래 그림 2-2 에서의 수식을 보면 W_s를 볼 수 있는데, 이는 matrix의 add연산에서 dimension을 맞춰주기 위한 parameter이다. 하늘색 사각형으로 표시한 부분이 Short-cut connection 부분이다. 
 
+[그림 2-1]
+
 <img src="../images/resnet/skipconnection.png" width="100%" height="50%">
+
+[그림 2-2]
 
 <img src="../images/resnet/skipconnection2.png" width="100%" height="50%">
 
@@ -43,7 +47,7 @@ ResNet의 기여를 크게 두 가지로 나누어보려고 한다. 첫 번째�
 
 VGG, GoogLeNet 과의 비교 실험.
 
-<img src="../images/resnet/ex2.png" width="100%" height="50%">
+<img src="../images/resnet/ex2.png" width="50%" height="50%">
 
 ## BottleNeck Layer
 
