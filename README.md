@@ -1,15 +1,46 @@
-# ChoSungMan's TIL
+# Today I Learned. SungMan,Cho.
+
+deep learning / machine learning 
+
+object detection, cnn-architecture, semantic segmentation
+
 - - -
-## Subject : Deep Learning / Machine Learning
+## Backbone Networks
 
-## Area : Object Detection , CNN Architecture
+- [X] AlexNet
+- [ ] ZFNet
+- [X] VGG
+- [X] GoogLeNet (Inception v1)
+- [X] ResNet
+- [ ] Inception v2 ~ v4
+- [ ] DenseNet
+- [ ] SENet
+- [ ] NASNet
 
-## Start Date: 2018.12.23
+### Compressed Model
 
-Object Detection, CNN Architecture를 주로 연구하고 있는 석사과정 학생입니다. 
+- [ ] MobileNet v1
+- [ ] ShuffleNet
+- [ ] SqueezeNet
+- [ ] MobileNet v2
 
-Paper를 읽고 개인적인 의견을 Review하려고 합니다. 
+## Object Detection
 
-틀린 내용이 있다면, 많은 지적 해주시면 감사드리겠습니다. 
+### Two-Stage Detection Networks
+- [ ] R-CNN
+- [ ] Fast R-CNN
+- [ ] Faster R-CNN
+- [ ] Mask R-CNN
+- [ ] RetinaNet
 
+### One-Stage Detection Networks
+- [ ] YOLO v1
+- [ ] YOLO v2
+- [ ] YOLO v3
+- [ ] SSD
+- [ ] DSSD
 
+## Semantic Segmentation
+- [ ] FCN
+- [ ] U-Net
+- [ ] DeepLab 
