@@ -14,7 +14,7 @@ object detection, cnn-architecture, semantic segmentation
 - [X] ResNet
 - [ ] Inception v2 ~ v4
 - [ ] DenseNet
-- [ ] SENet
+- [X] SENet
 - [ ] NASNet
 
 ### Compressed Model
