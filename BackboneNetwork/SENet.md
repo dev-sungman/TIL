@@ -16,11 +16,11 @@ Jie Hu, Li Shen, Samuel Albanie, Gang Sun, Enhua Wu
 
 아래 수식은 Convolution 연산을 나타내는데, V_c는 c번째 필터의 parameters를 나타낸다. 
 
-<img src="../images/senet/equation.png" width="300" height="200">
+<img src="../images/senet/equation.png" width="600" height="400">
 
 아래의 빨간 사각형 부분을 보면, channel dependency가 implicitly embedded 됨을 확인할 수 있다. 
 
-<img src="../images/senet/equation2.png" width="300" height="200">
+<img src="../images/senet/equation2.png" width="600" height="400">
 
 SENet 에서는 channel dependency를 explicit 하게 만드는 것을 목표로 한다. 
 
@@ -28,7 +28,7 @@ SENet 에서는 channel dependency를 explicit 하게 만드는 것을 목표로
 	* Global Information Embedding을 위한 과정이다. Channel Descriptor 를 만들어 Global Spatial Information을 표현한다. 
 	* Channel Descriptor Function 은 다양하게 선택할 수 있다. 논문에서는 Global Average Pooling(GAP)를 사용하였는데, 실험 결과가 좋았고 parameter의 추가적인 증가가 없어서 좋다고 설명한다. 
 
-<img src="../images/senet/channeldescriptor.png" width="300" height="200">
+<img src="../images/senet/channeldescriptor.png" width="600" height="400">
 
 2. Excitation
 	* Excitation 이 수행되기 위해서는 2가지의 전제조건이 필요하다. 
