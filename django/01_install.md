@@ -1,4 +1,4 @@
-# Django Project. 
+# Install and Setting 
 
 ## 0. Intro
 
