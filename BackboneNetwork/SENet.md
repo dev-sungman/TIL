@@ -8,7 +8,7 @@ Jie Hu, Li Shen, Samuel Albanie, Gang Sun, Enhua Wu
 
 ## Contribution
 
-논문 제목에서 알 수 있듯이 Squeeze, Excitation 두 개의 핵심적인 과정으로 구성된다. 이전 CNN의 구조를 보면 Channel의 Global Feature을 고려하지 못하고 있다는 한계점이 있었다. 이런 Global Feature를 고려하기 위하여 Squeeze 하고. 채널간의 중요도를 학습을 통하여 정해주기 위하여 Excitation 한다. 
+논문 제목에서 알 수 있듯이 Squeeze, Excitation 두 개의 핵심적인 과정으로 구성된다. 이전 CNN의 구조를 보면 Channel의 Global Feature을 고려하지 못하고 있다는 한계점이 있었다. 이런 Global Feature를 고려하기 위하여 Squeeze 하고, 채널간의 중요도를 학습을 통하여 정해주기 위하여 Excitation 한다. 
 
 아래 그림은 기존 CNN 에서의 연산을 나타낸다. 
 
