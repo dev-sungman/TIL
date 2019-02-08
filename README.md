@@ -44,3 +44,12 @@ object detection, cnn-architecture, semantic segmentation
 - [ ] FCN
 - [ ] U-Net
 - [ ] DeepLab 
+
+## Text Detection, Recognition, Spotting
+- [ ] AON (2018 CVPR)
+- [ ] Edit Probability for Scene Text Recognition (2018 CVPR)
+- [ ] FOTS (2018 CVPR)
+- [ ] Deep TextSpotter (2017 ICCV)
+- [ ] Focusing Attention Towards (2017 ICCV)
+- [ ] Deep Direct Regression for Multi-Oriented Scene Text Detection (2017 ICCV)
+- [ ] Single Shot Text Detector with Regional Attention (2017 ICCV)
