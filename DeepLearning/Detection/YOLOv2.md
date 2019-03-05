@@ -25,3 +25,10 @@ University of Washington, Allen Institude for AI
   * The high resolution classification network gives us an increase of almost 4% mAP.
     
 * Convolutional With Anchor Boxes.
+  * Using only convolutional layers the region proposal network(RPN) in Faster R-CNN predicts offsets and confidences for anchor boxes.
+  * Since the prediction layer is convolutional, the RPN predicts these offsets at every location in a feature map.
+  * Predicting offsets instead of coordinates simplifies the problem and makes it easier for the network to learn.
+  * <u>remove the fully connected layers</u> from YOLO and use anchor boxes to predict bounding boxes.
+  * <u>eliminate one pooling layer</u> to make the output of the network's convolutional layers higher resolution. 
+  * We also shrink the network to operate on 416 input images instead of 448 x 448. Because we want an odd number of locations in our feature map so there is a single center cell.
+    * Objects, especially large objects, tend to occupy the center of the image so it's good to have a single location right at the center to predict these objects instead of four locations.
