@@ -46,12 +46,44 @@ Baoguang Shi, Mingkun Yang, Xinggang Wang, Pengyuan Lyu, Cong Yao, Xiang Bai
   * It is more flexible compared to other simpler 2D transformations.
   * <u>TPS performs non-rigid deformation on images, handling a variety of distortions.</u>
 
-<img src="../images/ASTER/rectification_network.png" width="50%" height="50%">
+<img src="../images/ASTER/rectification_network.png" width="40%" height="50%">
 
 * **Localization Network**
   * A TPS transformation is determined by two sets of control points of equal size, denoted by $$K$$.
+
   * When the <u>control points on the input image are predicted</u> along the upper and lower text deges, the resulting <u>TPS transformation outputs a rectified image with regular text.</u>
-  * 
+
+    <img src="../images/ASTER/tps_transformation.png" width="60%" height="50%">
+
+  * The prediction is performed by convolutional neural network.
+    
+    $$
+    C = [c_1,...,c_k] \in R^{2 \times K}
+    $$
+
+    $$
+    C_k = [x_k,y_k]^T
+    $$
+
+    $$
+    C' = [c'_1,...,c'_k]
+    $$
+
+    
+
+    * The network consists of a few convolutional layers, with max-pooling layers inserted between them. 
+    * The output layer is a fully-connected layer whose output size is $$2K$$. Its output vector is reshaped to $$ C \in R^{2 \times K}$$. 
+    * $$C'$$ and $$C$$ are normalized image coordinates, where $$(0,0)$$ is top left corner and $$(1,1)$$ the bottom right.
+      
+
+  * All modules in the rectification network are differentiable.
+
+  * Localization network <u>is trained purely</u> by the back-propagated gradients, <u>requiring no manual annotations</u> on the control points.
+    
+
+* **Grid Generator**
+
+  * The grid generator computes a transformation and applies it to every pixel locations in $$I_r$$, generating a sampling grid $$ P = [p_i]$$ on $$I$$. 
 
 
 
