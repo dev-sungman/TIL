@@ -83,7 +83,24 @@ Baoguang Shi, Mingkun Yang, Xinggang Wang, Pengyuan Lyu, Cong Yao, Xiang Bai
 
 * **Grid Generator**
 
+  <img src="../images/ASTER/grid_generator.png" width="60%" height="50%">
+
+  
+
   * The grid generator computes a transformation and applies it to every pixel locations in $$I_r$$, generating a sampling grid $$ P = [p_i]$$ on $$I$$. 
+    
+
+* **Sampler**
+
+  * The sampler generates the rectified image:
+    $$
+    I_r = V(P,I)
+    $$
+    
+
+* **Comparison with STN and RARE**
+
+  * Use images of different sizes for the localization network and for the sampler.
 
 
 
