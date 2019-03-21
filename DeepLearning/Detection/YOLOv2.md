@@ -61,3 +61,33 @@ University of Washington, Allen Institude for AI
       
 
     * The cluster centroids are significantly different than hand-picked anchor boxes.
+      
+
+* **Direct location prediction**
+
+  * we encounter a. econd issue: model instability, especially during early iterations. Most of. he instability comes from predicting the $$(x,y)$$ locations for the box. In region proposal networks the network predicts values $$t_x$$ and $$t_y$$ and the $$(x,y)$$ center coordinates are calculated as:
+    
+    $$
+    x = (t_x * w_a) - x_a
+    $$
+
+    $$
+    y = (t_y * h_a) - y_a
+    $$
+
+    
+    
+
+  * This formulation is unconstrained so any anchor box can end up at any point in the image, regardless of what location predicted the box.
+    
+
+* **Fine-Grained Features**
+
+  * simply adding a passthrough layer that brings features from an earlier layer at 26 x 26 resolution.
+  * The passthrough layer concatenates the higher resolution features with the low resolution features by stacking adjacent features into different channels instead of spatial locations, simliar to identity mapping in ResNet. This turns the 26 x 26 x 512 feature map into a 13 x 13 x 2048 feature map, which can be concatenated with the original features.
+    
+
+* **Multi-Scale Training**
+
+  * Every 10 batches our network randomly chooses a new image dimension size. {320, 352, …, 608}. Thus smallest option is 320 x 320 and the largest is 608 x 608.
+  * 

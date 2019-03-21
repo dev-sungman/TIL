@@ -96,11 +96,21 @@ Baoguang Shi, Mingkun Yang, Xinggang Wang, Pengyuan Lyu, Cong Yao, Xiang Bai
     $$
     I_r = V(P,I)
     $$
-    
+
+
+
+
+  * It can back propagate the gradients on $$I_r$$ to $$P$$. This is achieved by the differentiable image sampling method.
 
 * **Comparison with STN and RARE**
 
   * Use images of different sizes for the localization network and for the sampler.
+    * The localization network operates on the smaller image, $$I_d$$, which is a downsampled version of $$I$$, in order to <u>reduce the number of parameters</u> needed for the prediction.
+    * Meanwhile, the sampler operates on the original image. sampling on a high-resolution image avoids degraded output resolution.
 
 
+
+### Recognition Network
+
+* CTC does not have mechanism to model the dependencies among its output characters.
 

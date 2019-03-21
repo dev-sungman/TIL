@@ -71,9 +71,10 @@ CNN의 입력으로 넣어주기 위해서는 이미지의 사이즈가 고정�
 <img src="../images/rcnn/visualize.png" width="100%" height="50%">
 
 ### Ablation Studies
-** no fine-tuning**
+**no fine-tuning**
 layer의 특성을 파악하기 위하여, 끝의 layer 들을 제거해보면서 성능을 테스트 해보았다. 그 결과 fc7, fc6을 제거하고 fc5에서 feature map을 추출한 것의 성능이 제일 좋았다. 
-(파라미터의 수는 제일 적었지만 성능이 좋다는 것에 의미를 둔다. **또한, CNN의 representational power가 convolutional layer에서 나온다고 설명한다.** )
+(파라미터의 수는 제일 적었지만 성능이 좋다는 것에 의미를 둔다. 또한, CNN의 representational power가 convolutional layer에서 나온다고 설명한다.)
 
-** fine-tuning (ImageNet) **
+**fine-tuning (ImageNet)**
 ImageNet으로 pre-training 한 후의 결과는 놀라웠다. 무려 mAP 8%가 증가하였고 fc5 보다 fc6, fc7 이 훨씬 더 영향을 미쳤다. ImageNet으로 pre-training 한 fc5 가 일반적인 특징점들을 잘 나타내고, fc6과 fc7이 도메인에 특화된 classifier를 얻는다는 것을 확인했다. 
+
